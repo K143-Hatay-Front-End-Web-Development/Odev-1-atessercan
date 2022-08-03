@@ -1,0 +1,49 @@
+<div>
+  <i></i>
+</div>
+<p></p>
+<style>
+  * {
+    background: #293462
+  }
+  div,p {
+    position: absolute;
+    top: 110px;
+    left: 125px;
+    width: 76px;
+    height: 100px;
+    border-radius: 50px 0 0 50px;
+	background: radial-gradient(circle at 100% -130px, #FE5F55 200px, #A64942 201px);
+  }
+  p{
+    transform: scale(-1,1);
+    top: 94px;
+    left: 199px;
+    z-index: 0;
+  }
+  i{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50px;
+    left: 60px;
+    border-radius: 50%;
+    background: #293462;
+    z-index: 1;
+    box-shadow: 20px 0 0 0 #293462;
+  }
+  div:after, p:after {
+    position:relative;
+    display: block;
+    content: '';
+    background: black;
+    width: 10px;
+    height: 10px;
+    top: -15px;
+    left: 25px;
+    border-radius: 50%;
+    background: #293462;
+    border: 10px solid #FFF1C1;
+    outline: 10px solid #FE5F55;
+  }
+</style>
